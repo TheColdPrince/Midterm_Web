@@ -1,0 +1,420 @@
+:root {
+    --static: rgba(225, 225, 225, 0.5);
+    --static4: rgba(225, 225, 225, 0.2);
+    --static3: #ffffff;
+    --static2: #0f0f0f;
+    --primary: #000000;
+    --secondary: #ffffff;
+    --primbuttn: #4685FF;
+    --secbuttn: #F2F2F2;
+    --accent: #FFB084;
+
+}
+
+:root { font-family: 'Inter', sans-serif; }
+
+:root {
+    --h1: 48px;
+    --h2: 32px;
+    --sub: 24px;
+    --p: 18px;
+    --sub: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-padding-top: 48px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 1000px;
+    margin: 0 15%;
+    gap: 64px;
+
+    /* font */
+    font-family: 'Inter', sans-serif;
+
+    /* color */
+    color: var(--primary);
+    background-color: var(--secondary);
+    
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 128px;
+    margin: 48px 0;
+}
+
+.h1table {
+    padding: 20px;
+    background-color: var(--secbuttn);
+    border-radius: 35px;
+}
+ul {
+    list-style: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  li {
+    margin-top: 10px;
+    transition: all 0.3s ease-in-out;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 40px;
+
+  }
+  ul:hover{
+    transform: scale(1.1);
+  }
+  li:hover{
+    transform: scale(1.3);
+  }
+/* table {
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    border-radius: 19px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  table:hover {
+    transform: scale(1.1);
+  }
+  
+  td, tr {
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 4px;
+  }
+  td, tr:hover {
+    transform: scale(1.3);
+  } */
+
+
+/* text styles */
+h1 {
+    font-size: 48px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+h2 {
+    font-size: 32px;
+    letter-spacing: -2px;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3 {
+    font-size: var(--sub);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 18px;
+    letter-spacing: normal;
+    line-height: 150%;
+}
+
+/* Jomar Transitions and animations */
+img {
+    transition: all 0.3s ease-in-out;
+}
+img:hover {
+    transform: scale(1.1);
+}
+
+h1:hover {
+    transform: scale(1.1);
+}
+
+
+/* nav */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.logoface {
+    width: 60px;
+    transform: rotate(0);
+}
+
+.logo:hover >
+.logoface {
+    transform: rotate(360deg);
+    transition: all ease-in-out 0.4s;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.menu-item {
+    font-size: 18px;
+}
+
+
+/* buttons */
+
+.primary-button {
+    padding: 16px 32px;
+    background-color: var(--primbuttn);
+    color: var(--secondary);
+    border-radius: 18px;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 2;
+}
+
+
+.secondary-button {
+    padding: 16px 32px;
+    background-color: var(--secbuttn);
+    color: var(--primary);
+    border-radius: 18px;
+    display: inline-block;
+    font-size: 18px;
+    z-index: 1;
+}
+
+
+/* hero */
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 96px;
+    gap: 48px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 48px;
+    width: 50%;
+}
+
+.hero-scroll {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    font-size: 16px;
+}
+
+.mondrian {
+    max-width: 100%;
+}
+
+.hero-img {
+    width: 50%;
+}
+
+
+/* part 1 */
+
+.part1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.part1-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.part1-card {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding: 48px;
+}
+
+.part1-card-bg {
+    background-color: var(--primary);
+    opacity: 5%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 35px;
+    flex: 1;
+    top: 0;
+    left: 0;
+}
+
+.part1-card-img {
+    height: 50%;
+}
+
+.highlight {
+    z-index: 5;
+}
+
+.highlight::before {
+    content: "";
+    background-color: var(--accent);
+    height: 12px;
+    width: 100%;
+    display: block;
+    transform: translate(0, 32px);
+    z-index: -5;
+    opacity: 50%;
+    position: relative;
+}
+
+/* my footer design */
+footer {
+text-align: center;
+padding: 35px;
+background-color: var(--static);
+border-radius: 35px;
+width: 100%;
+}
+/* responsiveness */
+
+
+@media screen and (max-width: 1200px) {
+    body {
+        margin: 0 5%;
+    }
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .sub {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .sub {
+        font-size: 14px;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    body {
+        gap: 32px;
+    }
+    .hero {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .part1-cards {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .part1-card {
+        width: 100%;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    main {
+        margin: 3% 5%;
+        width: 100%;
+    }
+
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-img {
+        width: 70%;
+    }
+
+    .mondrian {
+        height: auto;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .logoface {
+        width: 30px;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+    }
+
+    .primary-button, .secondary-button {
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
+/* This CSS is coded by Jomar Balmores */
