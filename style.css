@@ -272,12 +272,13 @@ footer {
 }
 
 
-/*  Newly Added Design Jomar */
-
+/*  this is the css box model created by Jomar */
 .centered-padding {
     background-color: rgba(243, 243, 243, 0.3);
     border-radius: 35px;
     padding: 20px;
+    margin: 3px;
+    border: 1px dashed black;
     text-align: center;
     width: 80%;
   }
