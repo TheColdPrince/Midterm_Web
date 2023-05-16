@@ -251,13 +251,14 @@ nav {
 .highlight::before {
     content: "";
     background-color: var(--high);
-    height: 12px;
+    height: 6px;
     width: 100%;
     display: block;
     transform: translate(0, 32px);
     z-index: -5;
     opacity: 50%;
     position: relative;
+    bottom: 5px;
 }
 
 /* my footer design */
