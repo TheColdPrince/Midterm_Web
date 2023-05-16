@@ -50,7 +50,7 @@ body {
     background-position: center;
 }
 
-/* add the ::before pseudo-element */
+/* pseudo-element */
 body::before {
     content: "";
     position: fixed;
